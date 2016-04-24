@@ -1,0 +1,92 @@
+html {
+  height: 100%;
+}
+
+body.index {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  min-height: 100%;
+  background: url("images/hexagons_only.svg") no-repeat 50% 50% fixed, 
+              url("images/perseids2_cmp.jpg") no-repeat 50% 50% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  position: relative;
+}
+
+body.other {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  min-height: 100%;
+  background: url("images/hexagons_only.svg") no-repeat 50% 50% fixed;
+  background-color: #18335d;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  position: relative;
+}
+
+.footer {
+  font-size: 10pt;
+  padding: 5px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+}
+
+.main {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  max-width: 95%
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.avoidwrap { display: inline-block; }
+
+.caption {
+  font-size: 10px;
+}
+
+.head {
+  font-size: 18px;
+}
+
+ul.body {
+  list-style: none;
+  padding: 0;
+}
+
+li.body {
+  padding-bottom: 5px;
+}
+
+h3.cv {
+  margin-top: 0;
+}
+
+ol {
+  list-style-position: inside;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+ol > li {
+  -moz-transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.italics {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
