@@ -2,44 +2,109 @@ html {
   height: 100%;
 }
 
-body.index {
-  padding-top: 80px;
-  padding-bottom: 30px;
-  min-height: 100%;
-  background: url("images/hexagons_only.svg") no-repeat 50% 50% fixed, 
-              url("images/perseids2_cmp.jpg") no-repeat 50% 50% fixed;
-  background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  position: relative;
+@media print {
+  nav {
+    display: none;
+  }
+  
+  .printonly {
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .name {
+    font-size: 16pt;
+    font-weight: bold;
+  }
+
+  .url {
+    float: right;
+    padding-top: 6pt;
+    font-weight: bold;
+  }
+  
+  .head {
+    font-weight: bold;
+  }
+
+  .main, .footer {
+    font-family: "Computer Modern", Times, "Liberation Serif", serif;
+  }
+  
+  .main {
+    padding: 0;
+  }
+  
+  .footer {
+    position: fixed;
+  }
+  
+  .cv {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 }
 
-body.other {
-  padding-top: 80px;
-  padding-bottom: 30px;
-  min-height: 100%;
-  background: url("images/hexagons_blue.svg") no-repeat 50% 50% fixed;
-  background-color: #18335d;
-  background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  position: relative;
+@media not print {
+  .main {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    max-width: 95%
+  }
+
+  body.index {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    min-height: 100%;
+    background: url("images/hexagons_only.svg") no-repeat 50% 50% fixed, 
+                url("images/perseids2_cmp.jpg") no-repeat 50% 50% fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    position: relative;
+  }
+
+  body.other {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    min-height: 100%;
+    background: url("images/hexagons_blue.svg") no-repeat 50% 50% fixed;
+    background-color: #18335d;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    position: relative;
+  }
+  
+  .cv {
+    font-size: 18pt;
+  }
+  
+  .head {
+    font-size: 14pt;
+  }
+  
+  .date{
+    padding-top: 4pt;
+  }
+  
+  .footer {
+    color: #ffffff;
+    position: absolute;
+  }
+  
+  .printonly {
+    display: none;
+  }
 }
 
 .footer {
+  right: 0;
+  bottom: 0;
   font-size: 10pt;
   padding: 5px;
-  color: #ffffff;
-  position: absolute;
-  bottom: 0;
-}
-
-.main {
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.7);
-  max-width: 95%
 }
 
 img.center {
@@ -48,19 +113,24 @@ img.center {
   margin-right: auto
 }
 
+div.row {
+  page-break-inside: avoid;
+}
+
+a[href]:after { content: none; }
+
 .avoidwrap { display: inline-block; }
 
 .caption {
   font-size: 10px;
 }
 
-.head {
-  font-size: 14pt;
-}
-
 .date {
   float: right;
-  padding-top: 4pt;
+}
+
+.right {
+  float: right;
 }
 
 ul.body {
@@ -68,19 +138,9 @@ ul.body {
   padding: 0;
 }
 
-.printonly {
-  display: none;
-}
-/*li.body {*/
-/*  padding-bottom: 5px;*/
-/*}*/
-
-h3.cv {
-  margin-top: 0;
-}
-
 ol {
-  list-style-position: inside;
+  margin-left: 1.2em;
+  list-style-position: outside;
   -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
