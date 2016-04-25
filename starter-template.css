@@ -55,7 +55,12 @@ img.center {
 }
 
 .head {
-  font-size: 18px;
+  font-size: 14pt;
+}
+
+.date {
+  float: right;
+  padding-top: 4pt;
 }
 
 ul.body {
@@ -63,9 +68,12 @@ ul.body {
   padding: 0;
 }
 
-li.body {
-  padding-bottom: 5px;
+.printonly {
+  display: none;
 }
+/*li.body {*/
+/*  padding-bottom: 5px;*/
+/*}*/
 
 h3.cv {
   margin-top: 0;

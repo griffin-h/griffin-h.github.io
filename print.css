@@ -1,0 +1,67 @@
+nav {
+  display: none;
+}
+
+.footer {
+  font-size: 10pt;
+  padding: 5px;
+  color: #ffffff;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.avoidwrap { display: inline-block; }
+
+.caption {
+  font-size: 10px;
+}
+
+.head {
+  font-size: 14pt;
+}
+
+.date {
+  float: right;
+  padding-top: 4pt;
+}
+
+ul.body {
+  list-style: none;
+  padding: 0;
+  page-break-after: avoid;
+}
+
+hr {
+  margin: 5px -15px 10px -15px;
+}
+
+.printonly {
+  margin: 0;
+}
+
+h3.cv {
+  margin-top: 0;
+}
+
+ol {
+  list-style-position: inside;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+ol > li {
+  -moz-transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.italics {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
