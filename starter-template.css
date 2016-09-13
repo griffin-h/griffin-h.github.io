@@ -101,10 +101,13 @@ html {
 }
 
 .footer {
-  right: 0;
   bottom: 0;
   font-size: 10pt;
   padding: 5px;
+}
+
+.absright {
+  right: 0;
 }
 
 img.center {
