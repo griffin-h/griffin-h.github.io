@@ -3,10 +3,6 @@ html {
 }
 
 @media print {
-
-  nav {
-    display: none;
-  }
   
   .printonly {
     margin-bottom: 10px;
@@ -37,7 +33,7 @@ html {
   }
   
   .footer {
-    position: fixed;
+    display: none;
   }
   
   .cv {
@@ -152,7 +148,7 @@ img.center {
   margin-right: auto
 }
 
-div.row, ul, li {
+.nobreak, ul, li {
   page-break-inside: avoid;
 }
 
@@ -178,16 +174,7 @@ ul.body {
 }
 
 ol {
-  list-style-position: outside;
-  -moz-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-ol > li {
-  -moz-transform: rotate(-180deg);
-  -webkit-transform: rotate(-180deg);
-  transform: rotate(-180deg);
+    padding: 0;
 }
 
 .italics {
