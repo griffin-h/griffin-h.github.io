@@ -158,7 +158,7 @@ img.center {
 
 a[href]:after { content: none; }
 
-a, .avoidwrap { display: inline-block; }
+.avoidwrap { display: inline-block; }
 
 .caption {
   font-size: 10px;
