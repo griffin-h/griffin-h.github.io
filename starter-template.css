@@ -72,6 +72,11 @@ html {
     display: none;
   }
 
+  a[href] {  /* override bootstrap defaults */
+    color: #337ab7 !important;
+    background-color: transparent !important;
+  }
+
 }
 
 @media not print {
