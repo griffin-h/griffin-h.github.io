@@ -16,6 +16,7 @@ html {
 
   .url {
     float: right;
+    padding-left: 10pt;
     padding-top: 6pt;
     font-weight: bold;
   }
