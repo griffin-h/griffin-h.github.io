@@ -78,6 +78,10 @@ html {
     background-color: transparent !important;
   }
 
+  .asterisk {
+    float: right;
+  }
+
 }
 
 @media not print {
